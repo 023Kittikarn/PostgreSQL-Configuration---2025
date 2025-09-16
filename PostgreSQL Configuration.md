@@ -219,6 +219,13 @@ SHOW data_directory;
 1. ตำแหน่งที่อยู่ของไฟล์ configuration อยู่ที่ตำแหน่งใด
 2. ตำแหน่งที่อยู่ของไฟล์ data อยู่ที่ตำแหน่งใด
 ```
+```
+ตำแหน่งไฟล์ configuration
+    /var/lib/postgresql/data/postgresql.conf
+    /var/lib/postgresql/data/pg_hba.conf
+ตำแหน่งไฟล์ data
+    /var/lib/postgresql/data
+```
 -- ตรวจสอบการตั้งค่าปัจจุบัน
 SELECT name, setting, unit, category, short_desc 
 FROM pg_settings 
@@ -231,6 +238,9 @@ WHERE name IN (
 ```
 บันทึกรูปผลของ configuration ทั้ง 6 ค่า 
 ```
+<img width="871" height="293" alt="ภาพถ่ายหน้าจอ 2568-09-16 เวลา 10 18 30" src="https://github.com/user-attachments/assets/307fd0cc-0ede-41c9-91b3-7d569fd9e6ee" />
+
+
 
 ### Step 2: การปรับแต่งพารามิเตอร์แบบค่อยเป็นค่อยไป
 
