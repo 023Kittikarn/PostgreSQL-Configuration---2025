@@ -219,12 +219,12 @@ SHOW data_directory;
 1. ตำแหน่งที่อยู่ของไฟล์ configuration อยู่ที่ตำแหน่งใด
 2. ตำแหน่งที่อยู่ของไฟล์ data อยู่ที่ตำแหน่งใด
 ```
-```
 ตำแหน่งไฟล์ configuration
     /var/lib/postgresql/data/postgresql.conf
     /var/lib/postgresql/data/pg_hba.conf
 ตำแหน่งไฟล์ data
     /var/lib/postgresql/data
+```
 ```
 -- ตรวจสอบการตั้งค่าปัจจุบัน
 SELECT name, setting, unit, category, short_desc 
