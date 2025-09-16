@@ -193,6 +193,12 @@ docker exec postgres-config df -h
 2. option -h ในคำสั่งมีผลอย่างไร
 3. docker exec postgres-config nproc  แสดงค่าผลลัพธ์อย่างไร
 ```
+```
+free = ดู RAM
+df = ดู Disk
+-h = แสดงผลให้อ่านง่าย (MB, GB)
+<img width="498" height="45" alt="ภาพถ่ายหน้าจอ 2568-09-16 เวลา 10 12 55" src="https://github.com/user-attachments/assets/c8eaed9c-78b8-4eba-8880-851dd34275e6" />
+```
 #### 1.2 เชื่อมต่อและตรวจสอบสถานะปัจจุบัน
 ```bash
 docker exec -it postgres-config psql -U postgres
